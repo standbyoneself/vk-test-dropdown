@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VK UI Dropdown</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="section section--dropdown-single" id="section-dropdown-single">
+      <h1 class="section__title">
+        Выбери только <span class="section__title--blue">один</span> пункт.
+      </h1>
+    </div>
+
+    <div
+      class="section section--dropdown-multiple"
+      id="section-dropdown-multiple"
+    >
+      <h1 class="section__title">
+        Теперь можешь выбрать
+        <span class="section__title--blue">несколько.</span>
+      </h1>
+    </div>
+
+    <div
+      class="section section--dropdown-without-avatar"
+      id="section-dropdown-without-avatar"
+    >
+      <h1 class="section__title">
+        А без
+        <span class="section__title--blue">аватара?</span>
+      </h1>
+    </div>
+
+    <div class="section section--dropdown-block" id="section-dropdown-block">
+      <h1 class="section__title">
+        И на
+        <span class="section__title--blue">всю</span> ширину?
+      </h1>
+    </div>
+
+    <div class="section section--dropdown-ajax" id="section-dropdown-ajax">
+      <h1 class="section__title">
+        Поиск по
+        <span class="section__title--blue">домену.</span>
+      </h1>
+    </div>
+
+    <!-- classList API Polyfill -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
+    <!-- Polyfills -->
+    <script src="src/polyfills/Array.prototype.filter.js"></script>
+    <script src="src/polyfills/Array.prototype.forEach.js"></script>
+    <script src="src/polyfills/Array.prototype.includes.js"></script>
+    <script src="src/polyfills/Array.prototype.indexOf.js"></script>
+    <script src="src/polyfills/Array.prototype.some.js"></script>
+    <script src="src/polyfills/String.prototype.includes.js"></script>
+    <script src="src/polyfills/String.prototype.trim.js"></script>
+    <script src="src/polyfills/EventListener.js"></script>
+    <!-- Utils -->
+    <script src="src/utils/lang.js"></script>
+    <script src="src/utils/debounce.js"></script>
+    <!-- Main Scripts -->
+    <script src="src/getUsers.js"></script>
+    <script src="src/IdService.js"></script>
+    <script src="src/Dropdown.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
